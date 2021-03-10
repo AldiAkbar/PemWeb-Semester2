@@ -35,13 +35,13 @@ if( !isset($_POST['submit'])) {
 
             <tbody>
                 <td>1</td>
-                <td><?= $_POST["nama"]; ?></td>
-                <td><?= $_POST["nim"]; ?></td>
-                <td><?= $_POST["mata-kuliah"]; ?></td>
-                <td><?= $_POST["nilai-uts"]; ?></td>
-                <td><?= $_POST["nilai-uas"]; ?></td>
-                <td><?= $_POST["nilai-tugas"]; ?></td>
-                <td><?= ($_POST["nilai-uts"] + $_POST["nilai-uas"] + $_POST["nilai-tugas"]) / 3; ?></td>
+                <td><?= $_GET["nama"]; ?></td>
+                <td><?= $_GET["nim"]; ?></td>
+                <td><?= $_GET["mata-kuliah"]; ?></td>
+                <td><?= $_GET["nilai-uts"]; ?></td>
+                <td><?= $_GET["nilai-uas"]; ?></td>
+                <td><?= $_GET["nilai-tugas"]; ?></td>
+                <td><?= ($_GET["nilai-uts"] + $_GET["nilai-uas"] + $_GET["nilai-tugas"]) / 3; ?></td>
             </tbody>
         </table>
 

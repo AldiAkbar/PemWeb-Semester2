@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
-            <form action="array_siswa.php" method="POST">
+            <form action="array_siswa.php" method="GET">
             <input type="hidden" name="id" id="id">
 
                     <div class="form-group">
@@ -44,14 +44,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-</html> -->
+</html>
 
-
-<?php
-$x = 1;
-
-do {
-  echo $x." ";
-  $x++;
-} while ($x > 2);
-?>
