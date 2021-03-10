@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-if( !isset($_POST['submit'])) {
+if (!isset($_GET['submit'])) {
     header("Location: form_nilai.php");
     exit;
 }
@@ -9,6 +9,7 @@ if( !isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@ if( !isset($_POST['submit'])) {
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <h2>Daftar Nilai Siswa</h2>
@@ -49,10 +51,9 @@ if( !isset($_POST['submit'])) {
             <a href="form_nilai.php"><button type="submit" class="btn btn-primary tombol" name="submit">Kembali</button></a>
         </div>
     </div>
-    
+
 
     <link rel="stylesheet" href="js/bootstrap.min.js">
 </body>
+
 </html>
-
-
