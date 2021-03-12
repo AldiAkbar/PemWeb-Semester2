@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
-            <form action="array_siswa.php" method="GET">
+            <form action="array_siswa.php" method="POST">
             <input type="hidden" name="id" id="id">
 
                     <div class="form-group">

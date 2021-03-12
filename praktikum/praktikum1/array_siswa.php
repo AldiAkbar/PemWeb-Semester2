@@ -1,6 +1,11 @@
 <?php
 
-if (!isset($_GET['submit'])) {
+$nilaiuts = (30 * $_POST["nilai-uts"]) / 100;
+$nilaiuas = (35 * $_POST["nilai-uas"]) / 100;
+$nilaitugas = (35 * $_POST["nilai-tugas"]) / 100;
+
+
+if (!isset($_POST['submit'])) {
     header("Location: form_nilai.php");
     exit;
 }
@@ -37,13 +42,13 @@ if (!isset($_GET['submit'])) {
 
             <tbody>
                 <td>1</td>
-                <td><?= $_GET["nama"]; ?></td>
-                <td><?= $_GET["nim"]; ?></td>
-                <td><?= $_GET["mata-kuliah"]; ?></td>
-                <td><?= $_GET["nilai-uts"]; ?></td>
-                <td><?= $_GET["nilai-uas"]; ?></td>
-                <td><?= $_GET["nilai-tugas"]; ?></td>
-                <td><?= ($_GET["nilai-uts"] + $_GET["nilai-uas"] + $_GET["nilai-tugas"]) / 3; ?></td>
+                <td><?= $_POST["nama"]; ?></td>
+                <td><?= $_POST["nim"]; ?></td>
+                <td><?= $_POST["mata-kuliah"]; ?></td>
+                <td><?= $_POST["nilai-uts"]; ?></td>
+                <td><?= $_POST["nilai-uas"]; ?></td>
+                <td><?= $_POST["nilai-tugas"]; ?></td>
+                <td><?= $nilaiuts + $nilaiuas + $nilaitugas; ?></td>
             </tbody>
         </table>
 
